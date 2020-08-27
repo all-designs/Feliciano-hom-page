@@ -1,0 +1,100 @@
+
+
+
+	<============= INDEX PAGE HEADING NOTE ==============>
+
+STAP:05	Heading Font-Family , Color And Font-Size.
+
+	>= Font-Size: 60px;
+	>= font-family:"Poppins", Arial, sans-serif;
+	>= font-weight:600;
+	>= color:#fff;
+
+STAP:06	Sub Heading Font-Family , Color And Font-Size.
+
+	>= font-size: 80px;
+	>= font-family: "Great Vibes", cursive;
+	>= font-wight: normal;
+	>= color: #c8a97e;
+
+
+
+
+
+
+	<=============== SECTION TITLE NOTE =============>
+
+STAP:07	Section Title Font-Family , Color And Font-Size.
+
+	>= Font-Size: 32px;
+	>= font-family:"Poppins", Arial, sans-serif;
+	>= font-weight:900;
+	>= color:#333;
+
+STAP:07	Section Sub-Title Font-Family , Color And Font-Size.
+
+	>= Font-Size: 100px;
+	>= font-family:"Great Vibes", cursive;
+	>= font-weight:normal;
+	>= color: #c8a97e;
+
+
+
+
+
+
+
+	<================ SECTION CONTENE TITLE NOTE ==============>
+
+
+STAP:08	Section Content Title Font-Family , color And Font-Size.
+
+	>= Font-Size: 24px;
+	>= font-family:"Poppins", Arial, sans-serif;
+	>= font-weight:500;
+	>= color:#000;
+
+
+
+
+
+
+	<================ BODY TEXT NOTE =======================>
+
+
+STAP:09	Body Text Font-Family And Color And Font-Size.
+
+	>= Font-Size: 17px;
+	>= font-family:"Poppins", Arial, sans-serif;
+	>= font-weight:400;
+	>= color:#666;
+
+
+STAP:10 Botton background color
+	>= color: #c8a97e;
+
+
+
+
+STAP:11	Download Font Family And Creat Font Face.
+
+STAP:12	Link Font Face.
+
+
+STAP:13	Now Creat Root For.
+				/*-------- Theme Font-Family --------*/
+				>= --poppins:"Poppins", Arial, sans-serif;
+				>= --great-vibes:"Great Vibes", cursive;
+
+				/*-------- Theme Colors --------*/
+				>= --white:#fff;
+				>= --black:#000000;
+				>= --bg-theme-color: #c8a97e;
+				>= --theme-color-gray20:#333333;
+				>= --theme-color-gray40:#666666;
+
+				
+
+				/*-------- Gradient Theme Color --------*/
+				>= --bg-gradient:linear-gradient(#ffe169, #ffa913);
+

@@ -1,0 +1,804 @@
+/*+-----------------------------------------------------------+
+  |                                                           |
+  |    Template Name: Feliciano Html Template				  |
+  |    Author: themesitem                                     |
+  |    Author Email: amdadulhaquemelon63566@gmail.com         |
+  |    Version: 1.00                                          |
+  |                                                           |
+  +-----------------------------------------------------------+*/
+/* CSS Index 
+-----------------------------------
+1. Theme default css
+2. Index Page 
+        |----> Header css
+        |----> Sticky header css
+        |----> Banner Css
+        |----> 
+        |----> 
+        |----> 
+        |----> 
+        |----> 
+        |----> Footer Css
+        |----> Copyright Css
+3. Next Page
+        |----> Inner Page Title css
+        |----> 
+        |----> 
+4. Error404 Page
+*/
+/*===========================
+    1. Theme default css 
+===========================*/
+/* Google Fonts Css */
+@import url(../css/font.css);
+
+
+body {
+	font-weight: normal;
+	font-style: normal;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	Font-Size: 17px;
+	font-family: "Poppins", Arial, sans-serif;
+	color: #666;
+}
+
+.img {
+	max-width: 100%;
+	-webkit-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	vertical-align: middle;
+}
+
+.bg_cover {
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center !important;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+}
+
+span,
+a {
+	display: inline-block;
+}
+
+a,
+button {
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Poppins", Arial, sans-serif;
+	font-weight: 600;
+	color: #fff;
+	margin: 0;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul,
+ol {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+p {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	margin-bottom: 0px;
+}
+
+/* ====== Theme color ===== */
+:root {
+	/*-------- Theme Font-Family --------*/
+	--poppins: "Poppins", Arial, sans-serif;
+	--great-vibes: "Great Vibes", cursive;
+
+	/*-------- Theme Colors --------*/
+	--white: #fff;
+	--black: #000000;
+	--bg-theme-color: #c8a97e;
+	--theme-color-gray20: #333333;
+	--theme-color-gray40: #666666;
+}
+
+/*== All Button Style ==*/
+
+/*== All section title here ==*/
+.section_title {
+	text-align: center;
+}
+
+.section_title h3 {
+	font-family: var(--great-vibes);
+	color: var(--bg-theme-color);
+	text-transform: capitalize;
+	font-size: 100px;
+}
+
+.section_title h2 {
+	font-family: var(--poppins);
+	color: var(--theme-color-gray20);
+	font-size: 50px;
+	margin-top: -58px;
+	font-weight: 900;
+}
+
+/*===========================
+    Index Page Css Start 
+===========================*/
+
+/*===========================
+    HEADER PART CSS START
+===========================*/
+/* header top */
+.header_top {
+	color: var(--theme-color-gray40);
+	padding: 13px 0;
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255, 255, 255, 0.05) !important;
+	z-index: 999999;
+}
+
+.header_top .phone {
+	display: ruby;
+}
+
+.header_top .emile {
+	display: ruby;
+}
+
+/* menu bar */
+.navbar {
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 11%;
+	z-index: 9999999;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-left: none;
+	border-right: none;
+}
+
+.navbar .navbar-brand {
+	padding: 30px 0;
+	color: var(--white);
+}
+
+.navbar .navbar-brand:hover {
+	color: var(--white);
+}
+
+.navbar-nav .nav-item {
+	padding: 0 7px;
+}
+
+.navbar-nav .nav-item:nth-child(5) {
+	padding-right: 0;
+}
+
+.navbar-nav .nav-item .nav-link {
+	text-transform: capitalize;
+	font-size: 17px;
+	color: var(--white);
+}
+
+.navbar-nav .nav-item .nav-link.active {
+	color: var(--bg-theme-color);
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: var(--white);
+}
+
+.navbar-nav .nav-item .nav_btn {
+	background: var(--bg-theme-color);
+	padding: 11px 20px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+/* ====== Expand Navbar ======= */
+/* ====== toggle icon ====== */
+.navbar .navbar-toggler {
+	margin-left: auto;
+	margin-top: 3px;
+}
+
+.navbar .navbar-toggler i {
+	color: var(--white);
+	opacity: 0.5;
+	font-size: 25px;
+}
+
+.navbar .navbar-toggler span {
+	color: var(--white);
+	text-transform: uppercase;
+	font-size: 26px;
+	opacity: 0.5;
+}
+
+
+/*===========================
+    HEADER PART CSS END
+===========================*/
+/*===========================
+    STICKY HEADER CSS 
+=============================*/
+/*===========================
+	BANNER PART CSS START
+===========================*/
+.banner_area {
+	position: relative;
+}
+
+.banner_area .overlay {
+	background: #000000;
+	opacity: .7;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.banner_area .banner_info {
+	padding-top: 230px;
+}
+
+.banner_info .banner_text {
+	text-align: center;
+}
+
+.banner_info .banner_text h1 {
+	font-size: 60px;
+	font-family: var(--poppins);
+	font-weight: 600;
+	color: var(--white);
+	text-transform: uppercase;
+}
+
+.banner_info .banner_text h2 {
+	font-size: 95px;
+	font-family: var(--great-vibes);
+	color: var(--bg-theme-color);
+}
+
+/* featured menus */
+.featured_menus {
+	padding-top: 30px;
+	padding-bottom: 40px;
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.featured_menus .single_menu {
+	text-align: center;
+}
+
+.single_menu .menu_img img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.single_menu .menu_text h3 {
+	font-size: 17px;
+	padding: 9px 0;
+}
+
+.single_menu .menu_text p {
+	display: flex;
+	justify-content: center;
+}
+
+.single_menu .menu_text p span {
+	padding: 0 2px;
+	color: var(--white);
+	font-size: 14px;
+}
+
+/*===========================
+ 	BANNER PART CSS END
+===========================*/
+
+
+/*===========================
+	ABOUT PART CSS START
+===========================*/
+.about_area {
+	margin: 50px 0;
+}
+
+.about_area .about_img {
+	display: flex;
+}
+
+.about_area .about_img .left_img {
+	width: 45%;
+	margin-right: 10px;
+	height: 546px;
+}
+
+.about_area .about_img .right_img {
+	width: 45%;
+	margin-left: 10px;
+	margin-top: 35px;
+	height: 546px;
+}
+
+.about_area .about_text {
+	padding-top: 35px;
+}
+
+.about_area .about_text p {
+	margin-top: 5px;
+}
+
+.about_area .about_text .time {
+	margin-top: 10px;
+}
+
+.about_area .about_text .time span {
+	display: block;
+}
+
+.about_area .about_text .time span a {
+	font-size: 40px;
+	margin-top: 35px;
+	color: var(--bg-theme-color);
+}
+
+/*===========================
+	ABOUT PART CSS END
+===========================*/
+
+
+/*===========================
+    COUNTER PART CSS START
+===========================*/
+.counter_area {
+	margin-bottom: 50px;
+}
+
+.count_items .count_number {
+	font-size: 44px;
+	color: var(--bg-theme-color);
+}
+
+.count_items h5 {
+	color: var(--theme-color-gray40);
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+/*===========================
+    COUNTER PART CSS END
+===========================*/
+
+
+/*===========================
+    SERVICES PART CSS START
+===========================*/
+.services {
+	background: #FAFAFA;
+	padding: 60px 0;
+}
+
+.single_service {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.single_service .service_icon i {
+	font-size: 54px;
+	color: var(--bg-theme-color);
+}
+
+.single_service .service_text h3 {
+	color: var(--black);
+	padding-bottom: 15px;
+}
+
+/*===========================
+    SERVICES PART CSS END
+===========================*/
+
+
+/*===========================
+    SPECIAL MENUS PART CSS START
+===========================*/
+.special_menus {
+	padding: 60px 0;
+}
+
+.special_menus #single_menu {
+	display: flex;
+}
+
+#single_menu .menu_img {
+	width: 50%;
+}
+
+#single_menu .menu_img img {
+	height: 100%;
+}
+
+#single_menu .menu_text {
+	width: 50%;
+	padding: 30px 20px;
+	border: 1px solid #e6e6e6;
+}
+
+#single_menu .menu_text .name_price {
+	padding-bottom: 45px;
+}
+
+#single_menu .menu_text .name_price span h3 {
+	color: var(--black);
+	font-size: 20px;
+}
+
+#single_menu .menu_text .name_price .price {
+	color: var(--bg-theme-color);
+	font-size: 20px;
+}
+
+#single_menu .menu_text p {
+	padding-bottom: 20px;
+}
+
+#single_menu .menu_text a {
+	background: var(--bg-theme-color);
+	padding: 5px 12px;
+	text-transform: capitalize;
+	color: #fff;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border: 1px solid var(--bg-theme-color);
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+
+#single_menu .menu_text a:hover {
+	background: transparent;
+	color: var(--bg-theme-color);
+}
+
+/*===========================
+    SPECIAL MENUS PART CSS END
+===========================*/
+
+/*===========================
+    CHEF PART CSS START
+===========================*/
+.chef {
+	padding: 70px 0;
+}
+
+.chef .chef_profile {
+	padding-top: 50px;
+	text-align: center;
+}
+
+.chef_profile .profile_img img {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	/* height: 320px;
+	width: 100%; */
+}
+
+.chef_profile .profile_text {
+	text-align: left;
+	padding-top: 10px;
+}
+
+.chef_profile .profile_text h3 {
+	color: var(--black);
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.chef_profile .profile_text span {
+	font-size: 18px;
+	color: var(--theme-color-gray20);
+	margin-bottom: 5px;
+}
+
+.chef_profile .profile_text ul {
+	margin-bottom: 5px;
+}
+
+.chef_profile .profile_text ul li {
+	display: inline-block;
+}
+
+.chef_profile .profile_text ul li a i {
+	color: var(--bg-theme-color);
+	padding-right: 5px;
+}
+
+/*===========================
+    CHEF PART CSS END
+===========================*/
+
+
+/*===========================
+    RESERVATION PART CSS START
+===========================*/
+.reserve {
+	padding: 150px 0;
+}
+
+.reserve .section_title h3 {
+	margin-top: -40px;
+	font-size: 77px;
+}
+
+.reserve .reservation_form {
+	padding: 10px 25px;
+	background: #fff;
+	text-align: center;
+}
+
+.reservation_form form .form_group {
+	display: inline-grid;
+	margin-bottom: 15px;
+	text-align: left;
+}
+
+.reservation_form form .form_group label {
+	text-transform: capitalize;
+	margin-bottom: 5px;
+	color: var(--black);
+	font-weight: 500;
+}
+
+.reservation_form form .form_group .form_control {
+	padding: 10px 10px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	text-transform: capitalize;
+	color: var(--black);
+	font-size: 15px;
+}
+
+.reservation_form form .form_group select {
+	width: 234px;
+}
+
+.reservation_form form .form_btn {
+	text-align: center;
+	padding: 40px 0;
+}
+
+.reservation_form form .form_btn input {
+	background: var(--bg-theme-color);
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 10px 65px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+}
+
+.reservation_form form .form_btn input:hover {
+	background: transparent;
+	color: var(--bg-theme-color);
+}
+
+/*===========================
+    RESERVATION PART CSS END
+===========================*/
+
+/*===========================
+    PART CSS START
+===========================*/
+.testimony {
+	padding: 60px 0;
+}
+
+.single_customer {
+	text-align: center;
+	padding-top: 50px;
+}
+
+.single_customer .customer_img {
+	text-align: center;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.single_customer .customer_img img {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.single_customer .customer_faq h3 {
+	color: var(--black);
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+/*===========================
+    PART CSS END
+===========================*/
+
+/*===========================
+    BLOG PART CSS START
+===========================*/
+.blog {
+	padding: 60px 0;
+}
+
+.blog .section_title h3 {
+	font-size: 67px;
+}
+
+.blog .single_blog {
+	background: #fff;
+}
+
+.single_blog .blog_text {
+	padding-left: 20px;
+	padding-bottom: 22px;
+}
+
+.single_blog .blog_text .date {
+	padding-top: 10px;
+}
+
+.single_blog .blog_text .date a {
+	color: var(--theme-color-gray40);
+}
+
+.single_blog .blog_text h3 {
+	color: var(--black);
+	font-size: 20px;
+	padding-right: 1px;
+	padding-top: 24px;
+}
+
+.single_blog .blog_text a {
+	text-transform: capitalize;
+	color: var(--theme-color-gray40);
+	padding-top: 20px;
+}
+
+.single_blog .blog_text .comment {
+	padding-left: 177px;
+	display: inline-block;
+}
+
+/*===========================
+    BLOG PART CSS END
+===========================*/
+footer {
+	background: #141313;
+	padding: 80px 0;
+}
+
+footer h2 {
+	padding-bottom: 35px;
+	text-transform: capitalize;
+	font-size: 20px;
+}
+
+
+.footer_feliciano .feliciano_text p {
+	color: var(--theme-color-gray40);
+	padding-bottom: 20px;
+}
+
+.footer_feliciano .feliciano_link a {
+	background: var(--theme-color-gray20);
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+
+.open_hours li span {
+	width: 100%;
+}
+
+.newslatter form {
+	padding-top: 30px;
+}
+
+.newslatter form input {
+	padding: 10px;
+	text-align: center;
+	border: none;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	width: 100%;
+}
+
+.newslatter form .email {
+	background: var(--theme-color-gray40);
+	color: var(--light);
+}
+
+.newslatter form .subscribe {
+	margin-top: 15px;
+	background: var(--bg-theme-color);
+	color: #ffff;
+}
